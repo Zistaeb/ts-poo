@@ -6,7 +6,7 @@ class MyMath {
 
   static max(...numbers: number[]) {
     console.log(numbers);
-    return numbers.reduce((max, item) => max >= item? max: item, 0);
+    return numbers.reduce((max, item) => max >= item? max: item, -Infinity);
   }
 }
 
