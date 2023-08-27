@@ -10,6 +10,7 @@ export class ProductCRUDService {
   async update(id: Product['id'], dto: UpdateProductDto){
     //permisos
     //logica
+    //validate(dto)
     this.http.otherRequest();
     return this.http.update(id, dto);
   }
